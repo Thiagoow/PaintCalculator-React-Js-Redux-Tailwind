@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --body-color: #fff;
+    --txt-color: #111;
+    --pink-color: #f81ce5;
+    --blue-color: #1da1f2;
+    --inactive-color: #969696;
+    --container-color: #f6f6f6;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--body-color);
+    transition: 0.4s;
+    /*☝🏽 For dark/light mode animation */
+  }
+}
