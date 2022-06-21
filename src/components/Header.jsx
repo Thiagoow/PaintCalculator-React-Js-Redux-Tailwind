@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
+import menuImg from '../../assets/img/Menu.svg';
 
 function Header() {
   const [mobileMenu, setMobileMenu] = React.useState(false);
@@ -14,7 +15,7 @@ function Header() {
       <nav className="h-3 justify-between align-middle">
         <img
           className="md:hidden mt-6 ml-20 cursor-pointer"
-          src="../../assets/img/Menu.svg"
+          src={menuImg}
           alt="MobileMenu"
           onClick={toggleNav}
         />
