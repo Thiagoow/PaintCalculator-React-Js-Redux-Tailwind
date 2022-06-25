@@ -1,7 +1,7 @@
 import React from 'react';
 import wallsIcon from '../../assets/img/WallsIcon.svg';
 
-const CurrentWall = () => {
+function CurrentWall() {
   return (
     <div className="flex justify-center">
       <img src={wallsIcon} alt="Walls icons" />
@@ -12,6 +12,6 @@ const CurrentWall = () => {
       </p>
     </div>
   );
-};
+}
 
 export default CurrentWall;

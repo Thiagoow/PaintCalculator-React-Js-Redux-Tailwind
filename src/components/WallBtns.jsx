@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WallBtns = () => {
+function WallBtns() {
   return (
     <div className="flex justify-center mt-8 gap-10">
       <button className="font-semibold text-sm py-2 px-5 rounded-xl bg-bodyColor text-blueColor shadow-[1px_4px_8px_rgba(0,0,0,0.2)] hover:shadow-[1px_8px_16px_rgba(0,0,0,0.2)]">
@@ -12,6 +12,6 @@ const WallBtns = () => {
       </button>
     </div>
   );
-};
+}
 
 export default WallBtns;
