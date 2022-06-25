@@ -3,7 +3,7 @@ import logoImg from '../../assets/img/logo.svg';
 
 function Logo() {
   return (
-    <div className="flex items-center">
+    <a className="flex items-center hover:opacity-80" href="/">
       <img src={logoImg} className="mr-5" alt="Logo" />
 
       <h1 className="font-semibold">
@@ -11,7 +11,7 @@ function Logo() {
         <br />
         PaintINeed?
       </h1>
-    </div>
+    </a>
   );
 }
 
