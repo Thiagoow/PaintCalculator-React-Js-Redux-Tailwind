@@ -6,12 +6,12 @@
 
 @layer base {
   :root {
-    --body-color: #fff;
+    --body-color: #f2f2fc;
     --txt-color: #111;
     --pink-color: #f81ce5;
     --blue-color: #1da1f2;
     --inactive-color: #969696;
-    --container-color: #f6f6f6;
+    --container-color: #fff;
   }
 
   body {
@@ -19,5 +19,8 @@
     background: var(--body-color);
     transition: 0.4s;
     /*☝🏽 For dark/light mode animation */
+  }
+  input {
+    background: var(--body-color);
   }
 }
