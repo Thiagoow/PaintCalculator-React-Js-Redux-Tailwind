@@ -14,7 +14,7 @@ function Header() {
 
       <nav className="h-3 justify-between align-middle">
         <img
-          className="md:hidden mt-6 ml-20 cursor-pointer"
+          className="md:hidden mt-6 ml-20 cursor-pointer hover:opacity-70"
           src={menuImg}
           alt="MobileMenu"
           onClick={toggleNav}
