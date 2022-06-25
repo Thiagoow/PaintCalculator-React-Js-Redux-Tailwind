@@ -22,5 +22,6 @@
   }
   input {
     background: var(--body-color);
+    text-align: center;
   }
 }
