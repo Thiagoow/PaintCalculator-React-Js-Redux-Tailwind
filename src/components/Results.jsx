@@ -1,7 +1,7 @@
 import React from 'react';
 import bucketIcon from '../../assets/img/Bucket.svg';
 
-function Result() {
+function Results() {
   return (
     <section className="flex flex-col items-center my-16">
       <div className="flex flex-row">
@@ -27,4 +27,4 @@ function Result() {
   );
 }
 
-export default Result;
+export default Results;
