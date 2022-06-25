@@ -3,7 +3,7 @@ import logoImg from '../../assets/img/logo.svg';
 
 function Logo() {
   return (
-    <a className="flex items-center hover:opacity-80" href="/">
+    <a className="flex items-center " href="/">
       <img src={logoImg} className="mr-5" alt="Logo" />
 
       <h1 className="font-semibold">
