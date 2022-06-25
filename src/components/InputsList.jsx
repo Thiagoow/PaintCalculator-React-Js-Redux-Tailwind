@@ -6,7 +6,7 @@ function InputsList() {
     <section className="flex flex-col gap-10 bg-containerColor py-10 my-10 items-center">
       <Input txtContent="Quantas portas?" iconName="ic:baseline-sensor-door" />
 
-      <Input txtContent="Quantos janelas?" iconName="ic:round-window" />
+      <Input txtContent="Quantas janelas?" iconName="ic:round-window" />
 
       <Input txtContent="Qual a altura? (m)" iconName="ic:round-height" />
 
