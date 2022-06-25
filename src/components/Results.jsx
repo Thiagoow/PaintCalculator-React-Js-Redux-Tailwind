@@ -19,7 +19,7 @@ function Results() {
         </p>
 
         <p className="mt-4 font-bold text-txtColor flex-wrap text-center">
-          1 lata de <b className="text-blueColor">18 litros</b> & 1 lata de{' '}
+          1 lata de <b className="text-blueColor">18 litros</b> & 1 lata de
           <b className="text-blueColor">02.5 litros</b>
         </p>
       </div>
