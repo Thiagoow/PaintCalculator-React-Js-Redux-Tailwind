@@ -1,5 +1,5 @@
 import React from 'react';
-import wallsIcon from '../../assets/img/WallsIcon.svg';
+import wallsIcon from '../../assets/img/Walls.svg';
 
 function CurrentWall() {
   return (
