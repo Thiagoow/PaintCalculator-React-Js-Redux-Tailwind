@@ -3,7 +3,7 @@ import Input from '../components/Input';
 
 function InputsList() {
   return (
-    <section className="flex flex-col gap-10 bg-containerColor py-10 my-10 items-center">
+    <section className="flex flex-col gap-11 bg-containerColor py-10 my-10 items-center">
       <Input txtContent="Quantas portas?" iconName="ic:baseline-sensor-door" />
 
       <Input txtContent="Quantas janelas?" iconName="ic:round-window" />

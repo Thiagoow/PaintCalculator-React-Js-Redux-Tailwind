@@ -12,10 +12,15 @@ function Input({ txtContent, iconName, rotateIcon }) {
       >
         <Icon
           icon={iconName}
-          className={'text-3xl ml-2 ' + (rotateIcon ? 'rotate-90 ' : '')}
+          className={'text-3xl ml-2 ' + (rotateIcon ? 'rotate-90' : '')}
         />
         {txtContent}
-        <input type="number" min="1" max="9" />
+        <input
+          type="number"
+          min="1"
+          max="50"
+          className="py-[0.2rem] rounded-md"
+        />
       </p>
     </>
   );
