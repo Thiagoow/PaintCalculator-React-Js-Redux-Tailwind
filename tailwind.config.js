@@ -9,7 +9,11 @@ module.exports = {
         pinkColor: 'var(--pink-color)',
         blueColor: 'var(--blue-color)',
         inactiveColor: 'var(--inactive-color)',
-        containerColor: 'var(--container-color)'
+        containerColor: 'var(--container-color)',
+
+        scrollBarColor: 'var(--scroll-bar-color)',
+        scrollThumbColor: 'var(--scroll-thumb-color)',
+        scrollHoverColor: 'var(--scroll-hover-color)'
       },
       screens: {
         xs: '500px',
