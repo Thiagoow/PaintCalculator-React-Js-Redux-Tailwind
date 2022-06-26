@@ -24,15 +24,22 @@ function Header() {
           className={'md:flex' + (mobileMenu ? 'flex' : ' hidden')}
           id="nav-menu"
         >
-          <ul className="flex flex-col rounded-lg mt-5 py-4 px-5 bg-txtColor text-white text-center md:flex-row md:space-x-8 md:py-0 md:text-black md:bg-transparent md:font-semibold">
+          <ul className="flex flex-col rounded-lg mt-5 py-5 bg-txtColor text-white text-center md:flex-row md:space-x-8 lg:space-x-8 md:py-0 md:text-black md:bg-transparent md:font-semibold">
             <li className="text-pinkColor cursor-pointer block py-4 md:py-0 hover:opacity-70">
               <a href="/">Home</a>
             </li>
             <li className="cursor-pointer block py-4 md:py-0 hover:opacity-70">
-              <a href="">Produtos</a>
+              <a href="https://www.behance.net/thiagoow" target="_blank">
+                Produtos
+              </a>
             </li>
             <li className="cursor-pointer block py-4 md:py-0 hover:opacity-70">
-              <a href="">Sobre</a>
+              <a
+                href="https://github.com/Thiagoow/PaintCalculator-React-Js-Tailwind"
+                target="_blank"
+              >
+                Sobre
+              </a>
             </li>
           </ul>
         </div>
