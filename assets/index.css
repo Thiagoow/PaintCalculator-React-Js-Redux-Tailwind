@@ -13,9 +13,9 @@
     --inactive-color: #969696;
     --container-color: #fff;
 
-    --scroll-bar-color: #eef5ff;
-    --scroll-thumb-color: #66a6ff;
-    --scroll-hover-color: #88b9ff;
+    --scroll-bar-color: #ceeafc;
+    --scroll-thumb-color: #1da1f2;
+    --scroll-hover-color: #5dbcf6;
   }
 
   body {
