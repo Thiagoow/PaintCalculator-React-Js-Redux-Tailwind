@@ -22,11 +22,4 @@ yarn install
 yarn dev
 ```
 
-<!--
-<p>⚠ Esse projeto possui um API separada do aplicativo❗❗❗ Sendo assim, caso queira rodar esse app localmente, clone a API no repositório: <br/>
-https://example.com
-</p>
-
-<p align="center">(E mude a 'baseURL' em 'src/api/axios.js') </p> -->
-
 <small>© Thiago Silva Lopes </small>
