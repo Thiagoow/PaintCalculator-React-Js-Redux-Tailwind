@@ -12,9 +12,9 @@ function Header() {
     <header className="flex relative z-50 justify-between mx-5 mt-8 md:mx-20 lg:mx-auto lg:max-w-3xl self-center">
       <Logo />
 
-      <nav className="h-3 justify-between align-middle">
+      <nav className="h-3 justify-between self-center md:mt-4">
         <img
-          className="md:hidden mt-6 ml-20 cursor-pointer hover:opacity-70"
+          className="md:hidden ml-20 cursor-pointer hover:opacity-70"
           src={menuImg}
           alt="MobileMenu"
           onClick={toggleNav}
@@ -24,7 +24,7 @@ function Header() {
           className={'md:flex' + (mobileMenu ? 'flex' : ' hidden')}
           id="nav-menu"
         >
-          <ul className="flex flex-col rounded-lg mt-10 py-5 bg-txtColor text-white text-center md:flex-row md:space-x-8 lg:space-x-8 md:py-0 md:text-black md:bg-transparent md:font-semibold">
+          <ul className="flex flex-col rounded-lg mt-10 py-5 bg-txtColor text-white text-center md:flex-row md:mt-0 md:space-x-8 lg:space-x-8 md:py-0 md:text-black md:bg-transparent md:font-semibold">
             <li className="text-pinkColor cursor-pointer block py-4 md:py-0 hover:opacity-70">
               <a href="/">Home</a>
             </li>
