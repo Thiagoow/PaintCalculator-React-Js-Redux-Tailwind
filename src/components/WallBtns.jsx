@@ -1,17 +1,30 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { selectForm, setForm, resetAll } from '../slices/mainSlices';
+import { useDispatch } from 'react-redux';
+import { setForm, resetAll } from '../slices/mainSlices';
+import calcAreas from '../utils/calcAreas';
 
 function WallBtns({ formData }) {
-  const form = useSelector(selectForm);
   const dispatch = useDispatch();
 
-  function InsertOnRedux() {
-    dispatch(setForm(formData));
+  function ResetAllStates() {
+    console.clear();
+    dispatch(resetAll());
   }
 
-  function ResetAllStates() {
-    dispatch(resetAll());
+  function InsertOnRedux() {
+    const areas = calcAreas(
+      formData.height,
+      formData.width,
+      formData.doors,
+      formData.windows
+    );
+    //If areas is string, put in a alert:
+    if (typeof areas != 'object') {
+      alert(areas);
+    } else {
+      console.log(formData);
+      dispatch(setForm(formData));
+    }
   }
 
   return (
