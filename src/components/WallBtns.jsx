@@ -1,13 +1,12 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setForm, resetAll } from '../slices/mainSlices';
+import { setForm, goToNextWall, resetAll } from '../slices/mainSlices';
 import calcAreas from '../utils/calcAreas';
 
 function WallBtns({ formData }) {
   const dispatch = useDispatch();
 
   function ResetAllStates() {
-    console.clear();
     dispatch(resetAll());
   }
 
@@ -22,8 +21,8 @@ function WallBtns({ formData }) {
     if (typeof areas != 'object') {
       alert(areas);
     } else {
-      console.log(formData);
       dispatch(setForm(formData));
+      dispatch(goToNextWall());
     }
   }
 
