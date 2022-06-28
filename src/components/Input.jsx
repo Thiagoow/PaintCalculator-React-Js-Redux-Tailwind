@@ -1,7 +1,11 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
+import { FormContext } from './InputsList';
 
-function Input({ txtContent, iconName, rotateIcon }) {
+function Input({ txtContent, iconName, rotateIcon, name }) {
+  const formContext = React.useContext(FormContext);
+  const { form, handleData } = formContext;
+
   return (
     <>
       <p
@@ -20,6 +24,9 @@ function Input({ txtContent, iconName, rotateIcon }) {
           min="1"
           max="50"
           className="py-[0.2rem] rounded-md"
+          name={name}
+          value={form[name]}
+          onChange={handleData}
         />
       </p>
     </>
