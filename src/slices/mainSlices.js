@@ -30,7 +30,9 @@ export const mainSlices = createSlice({
       state.accumulator = action.payload;
     },
     goToNextWall: (state) => {
-      state.currentWall += 1;
+      if (state.currentWall < 4) {
+        state.currentWall += 1;
+      }
     },
     resetAll(state) {
       Object.assign(state, initialState);
