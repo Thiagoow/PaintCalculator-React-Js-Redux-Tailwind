@@ -1,12 +1,18 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectForm, setForm } from '../slices/mainSlices';
 
 function WallBtns({ formData }) {
+  const form = useSelector(selectForm);
+  const dispatch = useDispatch();
+
   function InsertOnRedux() {
-    console.log(formData);
+    dispatch(setForm(formData));
   }
 
   function ResetData() {
     console.clear();
+    console.log(form);
   }
 
   return (
