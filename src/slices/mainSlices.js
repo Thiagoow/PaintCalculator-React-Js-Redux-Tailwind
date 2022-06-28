@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialStates = {
+const initialState = {
   currentWall: 1,
   form: {
     doors: 0,
@@ -17,7 +17,7 @@ const initialStates = {
 
 export const mainSlices = createSlice({
   name: 'main',
-  initialStates,
+  initialState,
   reducers: {
     //State actions (that change dynamically the state - PUSH):
     setCurrentWall: (state, action) => {
