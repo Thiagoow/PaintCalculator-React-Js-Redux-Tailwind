@@ -21,7 +21,7 @@ function Input({ txtContent, iconName, rotateIcon, name }) {
         {txtContent}
         <input
           type="number"
-          min="1"
+          min="0"
           max="50"
           className="py-[0.2rem] rounded-md"
           name={name}
