@@ -3,7 +3,7 @@
 <img src="./public/app.jpg" align="center">
 </div>
 
-# 🎨 Paint Calculator - React & Tailwind CSS
+# 🎨 Paint Calculator - React.js, Redux Toolkit & Tailwind CSS
 
 <p>Projeto desenvolvido por: <strong>Thiago Silva Lopes</strong>, em 06/2022.<br/>
 Para o code challenge da vaga de Front End Jr, da Digital Republic.</p>
