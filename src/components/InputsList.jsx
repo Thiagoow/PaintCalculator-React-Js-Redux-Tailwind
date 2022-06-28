@@ -17,7 +17,6 @@ export default function InputsList() {
     const { name, value } = e.target;
     const updatedData = { ...form, [name]: parseInt(value) };
     setForm(updatedData);
-    console.log(updatedData);
   }
 
   return (
