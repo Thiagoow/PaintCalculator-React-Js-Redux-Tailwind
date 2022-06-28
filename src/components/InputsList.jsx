@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from '../components/Input';
+import WallBtns from '../components/WallBtns';
 
 export const FormContext = React.createContext({
   formData: {}
@@ -20,8 +21,10 @@ export default function InputsList() {
   }
 
   return (
-    <section className="flex flex-col gap-11 bg-containerColor py-10 my-10 items-center">
-      <FormContext.Provider value={{ form, handleData }}>
+    <FormContext.Provider value={{ form, handleData }}>
+      <WallBtns formData={form} />
+
+      <section className="flex flex-col gap-11 bg-containerColor py-10 my-10 items-center">
         <Input
           txtContent="Quantas portas?"
           iconName="ic:baseline-sensor-door"
@@ -46,7 +49,7 @@ export default function InputsList() {
           rotateIcon={true}
           name="width"
         />
-      </FormContext.Provider>
-    </section>
+      </section>
+    </FormContext.Provider>
   );
 }
