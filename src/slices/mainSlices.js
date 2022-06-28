@@ -28,6 +28,9 @@ export const mainSlices = createSlice({
     },
     setAccumulator: (state, action) => {
       state.accumulator = action.payload;
+    },
+    resetAll(state) {
+      Object.assign(state, initialState);
     }
   }
 });
@@ -38,5 +41,6 @@ export const selectForm = (state) => state.main.form;
 export const selectAccumulator = (state) => state.main.accumulator;
 
 //Export actions & reducer:
-export const { setCurrentWall, setForm, setAccumulator } = mainSlices.actions;
+export const { setCurrentWall, setForm, setAccumulator, resetAll } =
+  mainSlices.actions;
 export default mainSlices.reducer;
