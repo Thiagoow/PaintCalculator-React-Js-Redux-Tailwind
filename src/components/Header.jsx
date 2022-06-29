@@ -35,7 +35,7 @@ function Header() {
             </li>
             <li className="cursor-pointer block py-4 md:py-0 hover:opacity-70">
               <a
-                href="https://github.com/Thiagoow/PaintCalculator-React-Js-Tailwind"
+                href="https://github.com/Thiagoow/PaintCalculator-React-Js-Redux-Tailwind"
                 target="_blank"
               >
                 Sobre
