@@ -27,7 +27,8 @@ export const mainSlices = createSlice({
       state.form = action.payload;
     },
     setAccumulator: (state, action) => {
-      state.accumulator = action.payload;
+      state.accumulator.wallsArea += action.payload.wallsArea;
+      state.accumulator.paintArea += action.payload.paintArea;
     },
     goToNextWall: (state) => {
       if (state.currentWall < 4) {
