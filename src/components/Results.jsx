@@ -1,7 +1,15 @@
 import React from 'react';
 import bucketIcon from '../../assets/img/Bucket.svg';
+import { useSelector } from 'react-redux';
+import { selectAccumulator } from '../slices/mainSlices';
+import calcPaintNeed from '../utils/paintNeeded';
 
 function Results() {
+  const { paintArea } = useSelector(selectAccumulator);
+  //const { liters, paints } = calcPaintNeed(paintArea);
+  const results = calcPaintNeed(paintArea);
+  console.log(results);
+
   return (
     <section className="flex flex-col items-center my-16">
       <div className="flex flex-row">
