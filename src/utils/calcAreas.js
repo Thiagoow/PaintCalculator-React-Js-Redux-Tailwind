@@ -5,8 +5,8 @@ const defaultWin = {
 };
 const winDefaultArea = defaultWin.wid * defaultWin.hei;
 const defaultDoor = {
-  wid: 1.9,
-  hei: 0.8
+  wid: 0.8,
+  hei: 1.9
 };
 const doorDefaultArea = defaultDoor.wid * defaultDoor.hei;
 
