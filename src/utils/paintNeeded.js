@@ -32,7 +32,7 @@ export default function calcPaintNeed(paintArea) {
     } else {
       results.liters.push(liters);
       results.canQty.push(canQty);
-      paintNeeded = paintNeeded - liters;
+      //paintNeeded = paintNeeded - liters;
     }
   });
 
