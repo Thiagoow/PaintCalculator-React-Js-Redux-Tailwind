@@ -23,11 +23,8 @@ export const mainSlices = createSlice({
     setCurrentWall: (state, action) => {
       state.currentWall = action.payload;
     },
-    setForm: (state, { payload }) => {
-      state.form.doors = Math.floor(payload.doors);
-      state.form.windows = Math.floor(payload.windows);
-      state.form.height = Number(payload.height);
-      state.form.width = Number(payload.width);
+    setForm: (state, action) => {
+      state.form = action.payload;
     },
     setAccumulator: (state, action) => {
       state.accumulator.wallsArea += action.payload.wallsArea;
