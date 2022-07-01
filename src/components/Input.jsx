@@ -26,7 +26,7 @@ function Input({ txtContent, iconName, rotateIcon, name, onlyInt }) {
           className="py-[0.2rem] rounded-md max-w-[77px]"
           step={onlyInt ? 1 : 0.5}
           name={name}
-          value={onlyInt ? parseInt(form[name]) : form[name]}
+          value={form[name]}
           onChange={handleData}
         />
       </p>
