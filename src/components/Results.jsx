@@ -13,7 +13,7 @@ function Results() {
       <div className="flex flex-row">
         <img src={bucketIcon} alt="Bucket icon" />
 
-        <p className="font-semibold text-txtColor ml-4 self-center">
+        <p className="font-semibold text-txtColor ml-3 self-center">
           Você vai precisar pintar:
         </p>
       </div>
