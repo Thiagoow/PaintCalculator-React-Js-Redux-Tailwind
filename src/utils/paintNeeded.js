@@ -11,16 +11,15 @@ const canOfPaints = {
 //==========Main function:
 export default function calcPaintNeed(paintArea) {
   //const canModelsQty = Object.keys(canOfPaints).length;
-  //let paintNeeded = paintArea / literCapacity;
-  let paintNeeded = 36;
-  paintArea = paintNeeded;
+  let paintNeeded = paintArea / literCapacity;
+
   let results = {
     liters: [],
     canQty: []
   };
 
   if (paintArea < 1) {
-    return 0;
+    paintArea = 0;
   }
 
   Object.keys(canOfPaints).forEach((e) => {
