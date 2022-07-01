@@ -11,7 +11,13 @@ const canOfPaints = {
 //==========Main function:
 export default function calcPaintNeed(paintArea) {
   //const canModelsQty = Object.keys(canOfPaints).length;
-  let paintNeeded = paintArea / literCapacity;
+  //let paintNeeded = paintArea / literCapacity;
+  let paintNeeded = 36;
+  paintArea = paintNeeded;
+  let results = {
+    liters: [],
+    canQty: []
+  };
 
   if (paintArea < 1) {
     return 0;
@@ -25,10 +31,11 @@ export default function calcPaintNeed(paintArea) {
     if (canQty < 1) {
       return 0;
     } else {
-      console.log(`${liters}: ${canQty}`);
+      results.liters.push(liters);
+      results.canQty.push(canQty);
       paintNeeded = paintNeeded - liters;
     }
   });
 
-  // return { liters, canQty };
+  return results;
 }
