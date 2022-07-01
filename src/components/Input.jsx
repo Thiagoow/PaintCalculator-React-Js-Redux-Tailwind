@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import { FormContext } from './InputsList';
 
-function Input({ txtContent, iconName, rotateIcon, name }) {
+function Input({ txtContent, iconName, rotateIcon, name, onlyInt }) {
   const formContext = React.useContext(FormContext);
   const { form, handleData } = formContext;
 
@@ -23,9 +23,10 @@ function Input({ txtContent, iconName, rotateIcon, name }) {
           type="number"
           min="0"
           max="50"
-          className="py-[0.2rem] rounded-md"
+          className="py-[0.2rem] rounded-md max-w-[77px]"
+          step={onlyInt ? 1 : 0.5}
           name={name}
-          value={form[name]}
+          value={onlyInt ? parseInt(form[name]) : form[name]}
           onChange={handleData}
         />
       </p>
