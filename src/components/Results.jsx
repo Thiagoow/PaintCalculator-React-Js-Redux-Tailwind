@@ -25,7 +25,7 @@ function Results() {
           Ou seja:
         </p>
 
-        <p className="mt-4 font-bold text-txtColor flex-wrap text-center">
+        <p className="mt-4 font-semibold text-txtColor flex-wrap text-center">
           Você precisa de {canQty[0]} lata{canQty[0] > 1 ? 's' : ''} de
           <b className="text-blueColor"> {liters[0]} litros</b>
         </p>
