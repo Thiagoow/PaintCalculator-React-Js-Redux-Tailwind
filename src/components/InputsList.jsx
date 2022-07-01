@@ -16,7 +16,7 @@ export default function InputsList() {
 
   function handleData(e) {
     const { name, value } = e.target;
-    const updatedData = { ...form, [name]: parseInt(value) };
+    const updatedData = { ...form, [name]: value };
     setForm(updatedData);
   }
 
@@ -28,12 +28,14 @@ export default function InputsList() {
         <Input
           txtContent="Quantas portas?"
           iconName="ic:baseline-sensor-door"
+          onlyInt={true}
           name="doors"
         />
 
         <Input
           txtContent="Quantas janelas?"
           iconName="ic:round-window"
+          onlyInt={true}
           name="windows"
         />
 
