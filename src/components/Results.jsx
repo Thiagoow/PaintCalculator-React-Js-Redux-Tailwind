@@ -6,9 +6,8 @@ import calcPaintNeed from '../utils/paintNeeded';
 
 function Results() {
   const { paintArea } = useSelector(selectAccumulator);
-  //const { liters, paints } = calcPaintNeed(paintArea);
-  const results = calcPaintNeed(paintArea);
-  console.log(results);
+  const { liters, canQty } = calcPaintNeed(paintArea);
+  console.log(liters, canQty);
 
   return (
     <section className="flex flex-col items-center my-16">
@@ -16,19 +15,19 @@ function Results() {
         <img src={bucketIcon} alt="Bucket icon" />
 
         <p className="font-bold text-txtColor ml-4 self-center">
-          Você vai precisar de:
+          Você vai precisar pintar:
         </p>
       </div>
 
-      <div className="flex flex-col mt-8 items-center">
+      <div className="flex flex-col mt-5 items-center">
         <p className="font-semibold text-txtColor">
-          <b className="font-bold text-pinkColor">20.5 litros</b> de tinta. Ou
-          seja:
+          Uma área de <b className="font-bold text-pinkColor">{paintArea}m²</b>.
+          Ou seja:
         </p>
 
         <p className="mt-4 font-bold text-txtColor flex-wrap text-center">
-          1 lata de <b className="text-blueColor">18 litros</b> & 1 lata de{' '}
-          <b className="text-blueColor">02.5 litros</b>
+          Você precisa de {canQty[0]} lata{canQty[0] > 1 ? 's' : ''} de
+          <b className="text-blueColor"> {liters[0]} litros</b>
         </p>
       </div>
     </section>
