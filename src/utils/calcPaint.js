@@ -23,7 +23,7 @@ export default function calcPaintNeed(paintArea) {
   }
 
   Object.keys(canOfPaints).forEach((e) => {
-    const iName = e;
+    //const eName = e;
     const liters = canOfPaints[e];
     const canQty = Math.round(paintNeeded / liters);
 
