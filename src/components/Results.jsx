@@ -2,7 +2,7 @@ import React from 'react';
 import bucketIcon from '../../assets/img/Bucket.svg';
 import { useSelector } from 'react-redux';
 import { selectAccumulator } from '../slices/mainSlices';
-import calcPaintNeed from '../utils/paintNeeded';
+import calcPaintNeed from '../utils/calcPaint';
 
 function Results() {
   const { paintArea } = useSelector(selectAccumulator);
